@@ -2,6 +2,10 @@
 
 void quick_sort(int array[],int left,int right){
 
+    for (int n = 0; n < 14; ++n){
+        printf("%.3i  ", array[n]);
+    }
+    printf("\n");
     int i = left,j = right;
     int temp;
     int pivot;
@@ -33,6 +37,7 @@ void quick_sort(int array[],int left,int right){
             i++;
             j--;
         }
+
 
     }
     if(left < j){
